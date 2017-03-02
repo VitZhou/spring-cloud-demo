@@ -1,0 +1,15 @@
+server:
+  port: 5555
+
+spring:
+  application:
+    name: config-server
+  # git管理配置
+  cloud:
+    config:
+      server:
+        git:
+          uri: http://git.basiccloud.net/henry/config-server
+          searchPaths: test
+          username: zsh989163@163.com
+          password: 123456zsh

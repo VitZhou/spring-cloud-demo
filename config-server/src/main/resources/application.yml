@@ -1,0 +1,15 @@
+server:
+  port: 5555
+
+spring:
+  application:
+    name: config-server
+  # git管理配置
+  cloud:
+    config:
+      server:
+        git:
+          uri: uri
+          searchPaths: test
+          username: username
+          password: pwd
