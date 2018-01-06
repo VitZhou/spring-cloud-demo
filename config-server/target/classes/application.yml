@@ -9,7 +9,7 @@ spring:
     config:
       server:
         git:
-          uri: http://git.basiccloud.net/henry/config-server
+          uri: uri
           searchPaths: test
-          username: zsh989163@163.com
-          password: 123456zsh
+          username: username
+          password: pwd

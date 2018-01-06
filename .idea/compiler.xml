@@ -8,20 +8,33 @@
         <outputRelativeToContentRoot value="true" />
         <module name="config-client" />
         <module name="config-server" />
+        <module name="eureka-client" />
+        <module name="eureka-producer" />
         <module name="eureka-server" />
         <module name="eurekaclient" />
         <module name="feign" />
         <module name="ribbon" />
+        <module name="zuul" />
+      </profile>
+      <profile name="Annotation profile for learing-springcloud" enabled="true">
+        <sourceOutputDir name="../eureka-client/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../eureka-client/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="service-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="config-client" target="1.8" />
       <module name="config-server" target="1.8" />
+      <module name="eureka-client" target="1.8" />
+      <module name="eureka-consumer" target="1.8" />
+      <module name="eureka-producer" target="1.8" />
       <module name="eureka-server" target="1.8" />
       <module name="eurekaclient" target="1.8" />
       <module name="feign" target="1.8" />
       <module name="learingspringcloud" target="1.8" />
       <module name="ribbon" target="1.8" />
+      <module name="service-server" target="1.8" />
       <module name="zuul" target="1.8" />
     </bytecodeTargetLevel>
   </component>
