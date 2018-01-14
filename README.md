@@ -1,1 +1,5 @@
-# minikube 要执行minikube addons enable ingress启动ingress controller
+#Spring Cloud Demo
+
+![build](https://travis-ci.org/henryZ/spring-cloud-demo.svg?branch=master)
+
+TBD
