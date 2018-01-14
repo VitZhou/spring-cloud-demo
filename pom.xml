@@ -4,18 +4,16 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.demo.sb.learning</groupId>
-    <artifactId>learing-springcloud</artifactId>
+    <groupId>org.vit.sc.learning</groupId>
+    <artifactId>learning-springcloud</artifactId>
+    <name>Parent SpringCloud</name>
     <packaging>pom</packaging>
     <version>0.1.0-SNAPSHOT</version>
     <modules>
-        <module>eureka-server</module>
-        <module>eureka-producer</module>
-        <module>ribbon</module>
-        <module>eureka-consumer</module>
         <module>config-server</module>
         <module>config-client</module>
-        <module>zuul</module>
+        <module>gateway</module>
+        <module>eureka</module>
     </modules>
 
     <dependencyManagement>
@@ -26,6 +24,11 @@
                 <version>1.4.0.RELEASE</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-oauth2</artifactId>
+                <version>1.2.1.RELEASE</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -52,6 +55,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.7.0</version>
                 <configuration>
                     <source>1.8</source>
                     <target>1.8</target>

@@ -1,0 +1,4 @@
+version: '3'
+services:
+  eureka-server:
+    image: 111.230.22.195/spring-cloud-demo/eureka-producer:latest

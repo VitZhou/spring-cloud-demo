@@ -4,12 +4,12 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/config-client/config-client.iml" filepath="$PROJECT_DIR$/config-client/config-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/config-server/config-server.iml" filepath="$PROJECT_DIR$/config-server/config-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/eureka-producer/eureka-producer.iml" filepath="$PROJECT_DIR$/eureka-producer/eureka-producer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/eureka-consumer/feign.iml" filepath="$PROJECT_DIR$/eureka-consumer/feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka/consumer/consumer.iml" filepath="$PROJECT_DIR$/eureka/consumer/consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka/eureka.iml" filepath="$PROJECT_DIR$/eureka/eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gateway/gateway.iml" filepath="$PROJECT_DIR$/gateway/gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/learingspringcloud.iml" filepath="$PROJECT_DIR$/learingspringcloud.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ribbon/ribbon.iml" filepath="$PROJECT_DIR$/ribbon/ribbon.iml" />
-      <module fileurl="file://$PROJECT_DIR$/zuul/zuul.iml" filepath="$PROJECT_DIR$/zuul/zuul.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka/producer/producer.iml" filepath="$PROJECT_DIR$/eureka/producer/producer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka/server/server.iml" filepath="$PROJECT_DIR$/eureka/server/server.iml" />
     </modules>
   </component>
 </project>

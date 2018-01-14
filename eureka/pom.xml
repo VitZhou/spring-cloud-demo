@@ -8,8 +8,12 @@
         <version>0.1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
-    <groupId>com.vit.sb.learning</groupId>
-    <artifactId>learning-springcloud-config-client</artifactId>
-    <name>Client Config</name>
+    <artifactId>learning-springcloud-eureka</artifactId>
+    <name>Eureka Parent</name>
+    <packaging>pom</packaging>
+    <modules>
+        <module>server</module>
+        <module>producer</module>
+        <module>consumer</module>
+    </modules>
 </project>

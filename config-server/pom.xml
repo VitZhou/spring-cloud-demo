@@ -3,14 +3,14 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>learing-springcloud</artifactId>
-        <groupId>com.demo.sb.learning</groupId>
+        <artifactId>learning-springcloud</artifactId>
+        <groupId>org.vit.sc.learning</groupId>
         <version>0.1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.demo.sb.learning</groupId>
-    <artifactId>config-server</artifactId>
+    <artifactId>learning-springcloud-config-server</artifactId>
+    <name>Server Config</name>
 
     <dependencies>
         <dependency>

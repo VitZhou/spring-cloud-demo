@@ -1,0 +1,1 @@
+# minikube 要执行minikube addons enable ingress启动ingress controller

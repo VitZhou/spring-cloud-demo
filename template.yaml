@@ -1,0 +1,217 @@
+apiVersion: v1
+kind: Template
+metadata:
+  name: spring-cloud-demo-template
+  annotations:
+    description: "spring cloud demo template"
+    iconClass: "spring-cloud-demo"
+    tags: "spring-cloud-demo"
+objects:
+### EUREKA SERVER ###
+- kind: Service
+  apiVersion: v1
+  metadata:
+    name: eureka-server
+    labels:
+      app: eureka-server
+    annotations:
+      module: eureka-server-module
+  spec:
+    type: ClusterIP
+    selector:
+      app: eureka-server
+    ports:
+    - name: http
+      port: 1111
+      targetPort: 1111
+
+- kind: DeploymentConfig
+  apiVersion: v1
+  metadata:
+    name: eureka-server
+    labels:
+      app: eureka
+    annotations:
+      module: eureka-server
+  spec:
+    replicas: 1
+    template:
+      metadata:
+        labels:
+          app: eureka-server
+        annotations:
+          module: eureka-server-module
+      spec:
+        containers:
+        - name: eureka-server-container
+          ports:
+          - name: http
+            containerPort: 1111
+          image: zsh9891/spring-cloud-demo-eureka-server:latest
+          imagePullPolicy: Always
+          env:
+          - name: EUREKA_PORT
+            value: "1111"
+### EUREKA PRODUCER ###
+- kind: Service
+  apiVersion: v1
+  metadata:
+    name: eureka-producer
+    labels:
+      app: eureka
+    annotations:
+      module: eureka-producer
+  spec:
+    type: ClusterIP
+    selector:
+      app: eureka-producer
+    ports:
+    - name: http
+      port: 2222
+      targetPort: 2222
+
+- kind: DeploymentConfig
+  apiVersion: v1
+  metadata:
+    name: eureka-producer
+    labels:
+      app: eureka
+    annotations:
+      module: eureka-producer
+  spec:
+    replicas: 1
+    template:
+      metadata:
+        labels:
+          app: eureka
+        annotations:
+          module: eureka-producer
+      spec:
+        containers:
+        - name: eureka-producer-container
+          ports:
+          - name: http
+            containerPort: 2222
+          image: zsh9891/spring-cloud-demo-eureka-producer:latest
+          imagePullPolicy: Always
+          env:
+          - name: EUREKA_PORT
+            value: "1111"
+          - name: EUREKA_URL
+            value: eureka-server.${PROJECT}.svc
+          - name: PRODUCER_PORT
+            value: "2222"
+### EUREKA CONSUMER ###
+- kind: Service
+  apiVersion: v1
+  metadata:
+    name: eureka-consumer
+    labels:
+      app: eureka-consumer
+    annotations:
+      module: eureka-consumer
+  spec:
+    type: ClusterIP
+    selector:
+      app: eureka-consumer
+    ports:
+    - name: http
+      port: 3333
+      targetPort: 3333
+
+- apiVersion: v1
+  kind: DeploymentConfig
+  metadata:
+    name: eureka-consumer
+    labels:
+      app: eureka
+    annotations:
+      module: eureka-consumer
+  spec:
+    replicas: 1
+    template:
+      metadata:
+        labels:
+          app: eureka-consumer
+        annotations:
+          module: eureka-consumer
+      spec:
+        containers:
+        - name: eureka-consumer-container
+          ports:
+          - name: http
+            containerPort: 3333
+          image: zsh9891/spring-cloud-demo-eureka-consumer:latest
+          imagePullPolicy: Always
+          env:
+          - name: EUREKA_PORT
+            value: "1111"
+          - name: EUREKA_URL
+            value: eureka-server.${PROJECT}.svc
+          - name: CONSUMER_PORT
+            value: "3333"
+
+### GATEWAY ###
+- kind: Service
+  apiVersion: v1
+  metadata:
+    name: gateway
+    labels:
+      app: gateway
+    annotations:
+      module: gateway
+  spec:
+    type: ClusterIP
+    selector:
+      app: gateway
+    ports:
+    - name: http
+      port: 1101
+      targetPort: 1101
+
+- kind: DeploymentConfig
+  apiVersion: v1
+  metadata:
+    name: gateway
+    labels:
+      app: eureka
+    annotations:
+      module: gateway
+  spec:
+    replicas: 1
+    template:
+      metadata:
+        labels:
+          app: gateway
+        annotations:
+          module: gateway
+      spec:
+        containers:
+        - name: gateway-container
+          ports:
+          - name: http
+            containerPort: 1101
+          image: zsh9891/spring-cloud-demo-gateway:latest
+          imagePullPolicy: Always
+          env:
+          - name: EUREKA_PORT
+            value: "1111"
+          - name: EUREKA_URL
+            value: eureka-server.${PROJECT}.svc
+          - name: GATEWAY_PORT
+            value: "1101"
+### route ###
+- apiVersion: v1
+  kind: Route
+  metadata:
+    name: spring-cloud-demo-route
+  spec:
+    host: spring.cloud.demo.org
+    targetPort: 1101
+    to:
+      kind: Service
+      name: gateway
+parameters:
+- description: project name
+  name: PROJECT
+  value: spring-cloud

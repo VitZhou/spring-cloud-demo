@@ -6,14 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="comsumer" />
         <module name="config-client" />
         <module name="config-server" />
+        <module name="consumer" />
         <module name="eureka-client" />
-        <module name="eureka-producer" />
-        <module name="eureka-server" />
         <module name="eurekaclient" />
         <module name="feign" />
-        <module name="ribbon" />
+        <module name="gateway" />
+        <module name="producer" />
+        <module name="server" />
+        <module name="springcloud-eureka-server" />
         <module name="zuul" />
       </profile>
       <profile name="Annotation profile for learing-springcloud" enabled="true">
@@ -24,17 +27,26 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="authro" target="1.8" />
+      <module name="commons" target="1.8" />
+      <module name="comsumer" target="1.8" />
       <module name="config-client" target="1.8" />
       <module name="config-server" target="1.8" />
+      <module name="consumer" target="1.8" />
+      <module name="eureka" target="1.8" />
       <module name="eureka-client" target="1.8" />
       <module name="eureka-consumer" target="1.8" />
       <module name="eureka-producer" target="1.8" />
       <module name="eureka-server" target="1.8" />
       <module name="eurekaclient" target="1.8" />
       <module name="feign" target="1.8" />
+      <module name="gateway" target="1.8" />
       <module name="learingspringcloud" target="1.8" />
+      <module name="producer" target="1.8" />
       <module name="ribbon" target="1.8" />
+      <module name="server" target="1.8" />
       <module name="service-server" target="1.8" />
+      <module name="springcloud-eureka-server" target="1.8" />
       <module name="zuul" target="1.8" />
     </bytecodeTargetLevel>
   </component>
