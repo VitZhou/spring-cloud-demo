@@ -2,79 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31a311c5-d43c-4a32-a6f5-e98aa4edaf46" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/build.sh" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/eureka/build.sh" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/eureka/consumer/Dockerfile" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/eureka/pom.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/eureka/producer/Dockerfile" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/eureka/producer/target/maven-archiver/pom.properties" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/eureka/server/Dockerfile" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/eureka/server/docker-compose.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/eureka/server/target/maven-archiver/pom.properties" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/eureka/server/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gateway/Dockerfile" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/readme.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/template.yaml" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_woodstox_woodstox_core_5_0_3.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_server_1_19_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_servlet_1_19_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jvnet_animal_sniffer_annotation_1_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_eureka_1_3_0_M1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_eureka_server_1_3_0_M1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/config-client/pom.xml" afterPath="$PROJECT_DIR$/config-client/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/config-server/pom.xml" afterPath="$PROJECT_DIR$/config-server/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/eureka-consumer/eureka-consumer.iml" afterPath="$PROJECT_DIR$/eureka/consumer/consumer.iml" />
-      <change beforePath="$PROJECT_DIR$/eureka-consumer/pom.xml" afterPath="$PROJECT_DIR$/eureka/consumer/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/eureka-consumer/src/main/java/com/learning/sb/feign/ComputeClient.java" afterPath="$PROJECT_DIR$/eureka/consumer/src/main/java/org/vit/sc/eureka/consumer/ComputeClient.java" />
-      <change beforePath="$PROJECT_DIR$/eureka-consumer/src/main/java/com/learning/sb/feign/ComputeClientHystrix.java" afterPath="$PROJECT_DIR$/eureka/consumer/src/main/java/org/vit/sc/eureka/consumer/ComputeClientHystrix.java" />
-      <change beforePath="$PROJECT_DIR$/eureka-consumer/src/main/java/com/learning/sb/feign/ConsumerController.java" afterPath="$PROJECT_DIR$/eureka/consumer/src/main/java/org/vit/sc/eureka/consumer/ConsumerController.java" />
-      <change beforePath="$PROJECT_DIR$/eureka-consumer/src/main/java/com/learning/sb/feign/FeignApplication.java" afterPath="$PROJECT_DIR$/eureka/consumer/src/main/java/org/vit/sc/eureka/consumer/ConsumerApplication.java" />
-      <change beforePath="$PROJECT_DIR$/eureka-consumer/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/eureka/consumer/src/main/resources/application.yml" />
-      <change beforePath="$PROJECT_DIR$/eureka-consumer/src/main/resources/logback.xml" afterPath="$PROJECT_DIR$/eureka/consumer/src/main/resources/logback.xml" />
-      <change beforePath="$PROJECT_DIR$/eureka-consumer/target/classes/application.yml" afterPath="$PROJECT_DIR$/eureka/consumer/target/classes/application.yml" />
-      <change beforePath="$PROJECT_DIR$/eureka-consumer/target/classes/com/learning/sb/feign/FeignApplication.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/eureka-consumer/target/classes/logback.xml" afterPath="$PROJECT_DIR$/eureka/consumer/target/classes/logback.xml" />
-      <change beforePath="$PROJECT_DIR$/eureka-producer/eureka-producer.iml" afterPath="$PROJECT_DIR$/eureka/producer/producer.iml" />
-      <change beforePath="$PROJECT_DIR$/eureka-producer/pom.xml" afterPath="$PROJECT_DIR$/eureka/producer/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/eureka-producer/src/main/java/com/learning/sb/eureka/client/ClientApplication.java" afterPath="$PROJECT_DIR$/eureka/producer/src/main/java/org/vit/sc/eureka/producer/ProducerApplication.java" />
-      <change beforePath="$PROJECT_DIR$/eureka-producer/src/main/java/com/learning/sb/eureka/client/ComputerController.java" afterPath="$PROJECT_DIR$/eureka/producer/src/main/java/org/vit/sc/eureka/producer/ComputerController.java" />
-      <change beforePath="$PROJECT_DIR$/eureka-producer/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/eureka/producer/src/main/resources/application.yml" />
-      <change beforePath="$PROJECT_DIR$/eureka-producer/src/main/resources/logback.xml" afterPath="$PROJECT_DIR$/eureka/producer/src/main/resources/logback.xml" />
-      <change beforePath="$PROJECT_DIR$/eureka-producer/target/classes/application.yml" afterPath="$PROJECT_DIR$/eureka/producer/target/classes/application.yml" />
-      <change beforePath="$PROJECT_DIR$/eureka-producer/target/classes/logback.xml" afterPath="$PROJECT_DIR$/eureka/producer/target/classes/logback.xml" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/eureka-server.iml" afterPath="$PROJECT_DIR$/eureka/server/server.iml" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/pom.xml" afterPath="$PROJECT_DIR$/eureka/server/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/java/com/learning/sb/eureka/server/Application.java" afterPath="$PROJECT_DIR$/eureka/server/src/main/java/org/vit/sc/eureka/server/ServerApplication.java" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/eureka/server/src/main/resources/application.yml" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/logback.xml" afterPath="$PROJECT_DIR$/eureka/server/src/main/resources/logback.xml" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/target/classes/application.yml" afterPath="$PROJECT_DIR$/eureka/server/target/classes/application.yml" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/target/classes/logback.xml" afterPath="$PROJECT_DIR$/eureka/server/target/classes/logback.xml" />
-      <change beforePath="$PROJECT_DIR$/eureka/consumer/target/classes/com/learning/sb/feign/ComputeClient.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/eureka/consumer/target/classes/com/learning/sb/feign/ComputeClientHystrix.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/eureka/consumer/target/classes/com/learning/sb/feign/ConsumerController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/eureka/producer/target/classes/com/learning/sb/eureka/client/ClientApplication.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/eureka/producer/target/classes/com/learning/sb/eureka/client/ComputerController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/eureka/server/target/classes/com/learning/sb/eureka/server/Application.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/ribbon/pom.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ribbon/ribbon.iml" afterPath="$PROJECT_DIR$/gateway/gateway.iml" />
-      <change beforePath="$PROJECT_DIR$/ribbon/src/main/java/com/learning/sb/ribbon/ComputeService.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ribbon/src/main/java/com/learning/sb/ribbon/RibbonApplication.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ribbon/src/main/java/com/learning/sb/ribbon/RibbonController.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ribbon/src/main/resources/application.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ribbon/target/classes/application.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ribbon/target/classes/com/learning/sb/ribbon/ComputeService.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ribbon/target/classes/com/learning/sb/ribbon/RibbonApplication.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ribbon/target/classes/com/learning/sb/ribbon/RibbonController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/zuul/pom.xml" afterPath="$PROJECT_DIR$/gateway/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/zuul/src/main/java/com/study/sc/zuul/Application.java" afterPath="$PROJECT_DIR$/gateway/src/main/java/org/vit/sc/gateway/GatewayApplication.java" />
-      <change beforePath="$PROJECT_DIR$/zuul/src/main/resources/application.yaml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/zuul/zuul.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" afterPath="$PROJECT_DIR$/.travis.yml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -115,16 +44,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="57">
               <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eureka/server/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -190,11 +109,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.yaml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="application.yaml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gateway/src/main/resources/application.yaml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="160">
               <caret line="15" column="15" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -251,7 +180,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/authro/src/main/java/com/learning/sc/authro/dto/AuthorityDto.java" />
         <option value="$PROJECT_DIR$/authro/src/main/java/com/learning/sc/authro/dto/CustomResponseBody.java" />
         <option value="$PROJECT_DIR$/authro/src/main/java/com/learning/sc/authro/dto/CreateUserDto.java" />
         <option value="$PROJECT_DIR$/authro/src/main/java/com/learning/sc/authro/controller/UserClient.java" />
@@ -302,6 +230,7 @@
         <option value="$PROJECT_DIR$/eureka/consumer/Dockerfile" />
         <option value="$PROJECT_DIR$/eureka/producer/Dockerfile" />
         <option value="$PROJECT_DIR$/build.sh" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
       </list>
     </option>
   </component>
@@ -392,55 +321,6 @@
             <path>
               <item name="spring-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-cloud-demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka" type="462c0819:PsiDirectoryNode" />
-              <item name="producer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="gateway" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -1001,7 +881,7 @@
       <workItem from="1515741221345" duration="2522000" />
       <workItem from="1515817593940" duration="33264000" />
       <workItem from="1515865587460" duration="14510000" />
-      <workItem from="1515909859954" duration="10860000" />
+      <workItem from="1515909859954" duration="11280000" />
     </task>
     <task id="LOCAL-00001" summary="添加zuul,更改module名称">
       <created>1515213414274</created>
@@ -1010,11 +890,25 @@
       <option name="project" value="LOCAL" />
       <updated>1515213414274</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="支持openshift 的template">
+      <created>1515932290644</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1515932290644</updated>
+    </task>
+    <task id="LOCAL-00003" summary="测试travis ci">
+      <created>1515935102992</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1515935102992</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145689000" />
+    <option name="totallyTimeSpent" value="146109000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
@@ -1066,7 +960,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="添加zuul,更改module名称" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加zuul,更改module名称" />
+    <MESSAGE value="支持openshift 的template" />
+    <MESSAGE value="测试travis ci" />
+    <option name="LAST_COMMIT_MESSAGE" value="测试travis ci" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1144,7 +1040,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/authro/pom.xml" />
     <entry file="file://$PROJECT_DIR$/redis.yml" />
     <entry file="file://$PROJECT_DIR$/learingspringcloud.iml">
       <provider selected="true" editor-type-id="text-editor">
@@ -1487,6 +1382,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="15" column="15" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
