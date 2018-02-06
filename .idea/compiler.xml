@@ -13,6 +13,7 @@
         <module name="eurekaclient" />
         <module name="feign" />
         <module name="gateway" />
+        <module name="learning-springcloud-config-server" />
         <module name="producer" />
         <module name="server" />
         <module name="springcloud-eureka-server" />
@@ -23,12 +24,6 @@
         <sourceTestOutputDir name="../eureka-client/target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="service-server" />
-      </profile>
-      <profile name="Annotation profile for Parent SpringCloud" enabled="true">
-        <sourceOutputDir name="../../config-server/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../../config-server/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="config-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -49,6 +44,7 @@
       <module name="feign" target="1.8" />
       <module name="gateway" target="1.8" />
       <module name="learingspringcloud" target="1.8" />
+      <module name="learning-springcloud-config-server" target="1.8" />
       <module name="producer" target="1.8" />
       <module name="ribbon" target="1.8" />
       <module name="server" target="1.8" />

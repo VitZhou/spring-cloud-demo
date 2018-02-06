@@ -1,7 +1,14 @@
 spring:
   application:
     name: eureka-producer
-
+  cloud:
+    config:
+      profile: dev
+      discovery:
+        enabled: true
+        serviceId: config-server
+      name: eureka-producer
+      label: master
 server:
   port: ${PRODUCER_PORT:2222}
 

@@ -11,5 +11,7 @@
 
     <artifactId>config</artifactId>
 
-
+    <modules>
+        <module>config-server</module>
+    </modules>
 </project>
