@@ -98,7 +98,7 @@ objects:
           - name: EUREKA_PORT
             value: "1111"
           - name: EUREKA_URL
-            value: eureka-server.${PROJECT}.svc
+            value: "eureka-server"
           - name: PRODUCER_PORT
             value: "2222"
 ### EUREKA CONSUMER ###
@@ -147,7 +147,7 @@ objects:
           - name: EUREKA_PORT
             value: "1111"
           - name: EUREKA_URL
-            value: eureka-server.${PROJECT}.svc
+            value: "eureka-server"
           - name: CONSUMER_PORT
             value: "3333"
 
@@ -197,7 +197,7 @@ objects:
           - name: EUREKA_PORT
             value: "1111"
           - name: EUREKA_URL
-            value: eureka-server.${PROJECT}.svc
+            value: "eureka-server"
           - name: GATEWAY_PORT
             value: "1101"
 ### route ###
@@ -207,7 +207,8 @@ objects:
     name: spring-cloud-demo-route
   spec:
     host: spring.cloud.demo.org
-    targetPort: 1101
+    port:
+      targetPort: http
     to:
       kind: Service
       name: gateway

@@ -4,12 +4,14 @@ spring:
 
 server:
   port: ${GATEWAY_PORT:1101}
+
 zuul:
   routes:
     test:
       strip-prefix: true
       path: /test/**
       serviceId: eureka-consumer
+  add-proxy-headers: true
 
 eureka:
   client:

@@ -14,7 +14,12 @@
         <module>config-client</module>
         <module>gateway</module>
         <module>eureka</module>
+        <module>config</module>
     </modules>
+
+    <properties>
+        <secuirty.version>1.2.1.RELEASE</secuirty.version>
+    </properties>
 
     <dependencyManagement>
         <dependencies>
@@ -28,11 +33,21 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-oauth2</artifactId>
-                <version>1.2.1.RELEASE</version>
+                <version>${secuirty.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-security</artifactId>
+                <version>${secuirty.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
     <dependencies>
+        <dependency>
+            <groupId>com.facebook.infer.annotation</groupId>
+            <artifactId>infer-annotation</artifactId>
+            <version>0.11.2</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>

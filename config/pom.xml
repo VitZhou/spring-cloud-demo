@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.vit.sb.learning</groupId>
-    <artifactId>learning-springcloud-config-client</artifactId>
-    <name>Client Config</name>
+    <artifactId>config</artifactId>
+
+
 </project>

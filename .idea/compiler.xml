@@ -7,8 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="comsumer" />
-        <module name="config-client" />
-        <module name="config-server" />
+        <module name="config" />
         <module name="consumer" />
         <module name="eureka-client" />
         <module name="eurekaclient" />
@@ -25,11 +24,19 @@
         <outputRelativeToContentRoot value="true" />
         <module name="service-server" />
       </profile>
+      <profile name="Annotation profile for Parent SpringCloud" enabled="true">
+        <sourceOutputDir name="../../config-server/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../../config-server/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="config-server" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="auth" target="1.8" />
       <module name="authro" target="1.8" />
       <module name="commons" target="1.8" />
       <module name="comsumer" target="1.8" />
+      <module name="config" target="1.8" />
       <module name="config-client" target="1.8" />
       <module name="config-server" target="1.8" />
       <module name="consumer" target="1.8" />

@@ -9,7 +9,7 @@ spring:
     config:
       server:
         git:
-          uri: uri
-          searchPaths: test
-          username: username
+          uri: https://github.com/VitZhou/spring-cloud-demo
+          searchPaths: config/config-repo
+          username: vitzhou@gmail.com
           password: pwd
